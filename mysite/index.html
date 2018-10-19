@@ -1,0 +1,45 @@
+1)
+Forloop(){ 
+	int sum = 0; //make it a double if necessary 
+	for(int i=0; i<numberList.length(); i++){
+		sum += numberList.numberAt(i);
+	}
+	return sum;
+}
+	
+	
+Whileloop(){
+	int sum = 0; //make it a double if necessary 
+	while(numberList.hasNext()){
+		sum += numberList.stackPopNextNumber();
+	}	
+	return sum;
+}
+
+
+recursion(index){
+	if(!numberList.iretable()){
+		return 0; // why are adding?
+	}
+	return numberList.NumberAt(0) + recursion([1:]);
+}
+
+2) 
+Alternating(){
+	numberList endList = new nubmList();
+	while(listA.notEmpty() || listB.notEmpty()){
+		endList.push(listA.popIfNotEmpty());
+		endList.push(listB.popIfNotEmpty());
+	}
+}
+
+3)
+Fibonacci(){
+	NumberList fibonacci = new NumberList();
+	NumberList.numberAt(0) = 0;
+	NumberList.numberAt(1) = 1;
+	while(numberList.length<100){
+		NumberList.push(numberList.numberAt(numberList.length()) + numberList.numberAt(numberList.length()-1));
+	}
+	return NumberList;
+}
